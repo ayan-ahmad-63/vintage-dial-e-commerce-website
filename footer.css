@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  background-color: #000;
+  padding: 40px 5% 30px;
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  gap: 28px 32px;
+  align-items: start;
+}
+
+.branding-footer {
+  max-width: 320px;
+}
+
+.branding-footer .footer-logo-text {
+  color: #fff !important;
+}
+
+.branding-footer p {
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.footer-column h3 {
+  margin-bottom: 14px;
+}
+
+.footer-column h3 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a,
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover,
+.contact-info a:hover {
+  color: #bbb;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.newsletter {
+  margin-top: 18px;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.newsletter button:hover {
+  background-color: #003580;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 18px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.footer-bottom a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .branding-footer {
+    max-width: none;
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    padding: 32px 5% 24px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+
+  .newsletter {
+    margin-top: 12px;
+  }
+}

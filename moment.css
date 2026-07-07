@@ -1,0 +1,195 @@
+
+.movement-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.section-title {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 2px;
+  background: #000;
+  margin: 8px auto 0;
+}
+
+.movement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch; /
+}
+
+
+.movement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+
+.movement-card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.movement-card img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.movement-card img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.28);
+}
+
+
+.view-all-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  margin-top: 40px;
+}
+
+.view-all-btn:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.watch-section {
+  padding: 40px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-left: 1px;
+  gap: 10px;
+}
+
+
+.slider-wrapper {
+  position: relative;
+  max-width: 1200px;
+  max-height: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+}
+
+
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  scrollbar-width: auto;
+}
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2b2828;
+  color: #fff;
+  border: 0;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+}
+.slider-prev {
+  left: 1px;
+}
+.slider-next {
+  right: 1px;
+}
+.slider-btn:hover {
+  background-color: #0a0b0c;
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+.watch-cards {
+  flex: 0 0 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(9, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.watch-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.cards-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+.watch-cards:hover .cards-image img {
+  filter: brightness(0.9);
+}
+
+
+.cards-title {
+  padding: 15px;
+}
+.cards-title h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #141719;
+}
+.cards-title h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+.cards-title h2 a:hover {
+  color: #000;
+}

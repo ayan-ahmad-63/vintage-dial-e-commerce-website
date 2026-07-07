@@ -1,0 +1,12 @@
+USER{
+email:
+ayanahmad3950@gmail.com
+pass:
+123456}
+
+ADMIN{
+    email:
+    aa@vintagedial.com
+    pass:
+    AA1234
+}

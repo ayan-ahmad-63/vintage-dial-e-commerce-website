@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial;
+}
+
+body {
+  background: #f8f8f8;
+  color: #111;
+}
+
+
+.watch-carousel {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f8f8;
+  color: #111;
+}
+
+
+.watch-carousel__title {
+  font-size: 26px;
+  margin-bottom: 25px;
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.watch-carousel__title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 150px;
+  margin: 8px auto 0;
+  background: #050404;
+}
+
+
+.watch-carousel__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.watch-carousel__track {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 15px;
+}
+
+.watch-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+
+.watch-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  min-width: 220px;
+  max-width: 300px;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+ 
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
+.watch-carousel__track a {
+  color: #fff;
+}
+
+.watch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+.watch-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f8f8f8;
+}
+
+
+.watch-card h3 {
+  margin: 12px 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+
+.watch-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #b08d57;
+  font-weight: 600;
+}
+
+
+.watch-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #111;
+  color: #fff;
+  border: 0;
+  padding: 10px 12px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.watch-carousel__btn:hover {
+  background: #333;
+}
+
+.watch-carousel__btn--prev {
+  left: 0;
+}
+
+.watch-carousel__btn--next {
+  right: 0;
+}
+
+
+@media (max-width: 576px) {
+  .watch-card {
+    min-width: 180px;
+  }
+
+  .watch-card img {
+    height: 160px;
+  }
+
+  .watch-carousel__btn--prev {
+    left: 5px;
+  }
+
+  .watch-carousel__btn--next {
+    right: 5px;
+  }
+}

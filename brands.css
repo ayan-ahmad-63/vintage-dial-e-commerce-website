@@ -1,0 +1,148 @@
+.elementor-heading-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px 0 20px;
+  color: #000;
+}
+
+
+.brands-wrapper {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brand-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.brand-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.brand-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.brand-box:hover::after {
+  opacity: 1;
+}
+
+
+.brand-logo {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.brand-logo img {
+  max-width: 180px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.brand-box:hover .brand-logo img {
+  filter: grayscale(0%);
+}
+
+
+.brand-desc {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #c4bebe;
+  margin: 15px 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 0 15px;
+}
+
+.brand-box:hover .brand-desc {
+  opacity: 1;
+}
+
+
+.brand-buttons {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.brand-buttons .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #000;
+  background-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.brand-buttons .btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+
+.brand-buttons .btn.secondary {
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+.brand-buttons .btn.secondary:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
